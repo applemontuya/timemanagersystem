@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ include ('default/navbar.html.twig') }}
+    <div id="wrapper">
+
+
+            <div class="container">
+                <div class="row justify-content-end">
+
+
+                    <h4 class="text-secondary">Date/Time: <span id="datetime"></span></h4>
+                    <h2></h2>
+                    <h2></h2>
+                </div>
+                <div class="row">
+
+                <form class="form-inline" method="post"  action="{{ 'log_check' }}">
+                    {#{{ form_start(form, {'attr': {'class': 'my-form-class'} }) }}#}
+                    {#{{ form_widget(form) }}#}
+                    {#{{ form_end(form) }}#}
+                    {#<button type="submit" class="btn btn-primary mb-2 bg-info">Submit</button>#}
+                    <div class="form-group mb-2">
+                        <label for="inputEmpId" class="sr-only">Employee ID</label>
+                        <input type="text" class="form-control" id="inputEmpId" name="inputEmpId" placeholder="Employee ID">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="inputPIN" class="sr-only">PIN</label>
+                        <input type="password" class="form-control" id="inputPIN" name="inputPIN" placeholder="PIN">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2 bg-info">Submit</button>
+                </form>
+                </div>
+
+
+            <h2></h2>
+            <h2></h2>
+                    <div class="row">
+            <table class="table">
+                <thead class="thead-light">
+                <tr>
+                    <th style="width:8%" scope="col">#</th>
+                    <th style="width:40%" scope="col">Name</th>
+                    <th style="width:13%"scope="col">In</th>
+                    <th style="width:13%"scope="col">Out</th>
+                    <th style="width:13%"scope="col">In</th>
+                    <th style="width:13%"scope="col">Out</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+                        <div class="row">
+            {#<table>#}
+                {#{% for item in form.items %}#}
+                    {#{% set id = item.get('value') %}#}
+                    {#<tr>#}
+                        {#<td>{{ form_widget(item) }}</td>#}
+                        {#<td>{{ items[id].name }}</td>#}
+                        {#<td>{{ items[id].category.name }}</td>#}
+                        {#<td>{{ items[id].available ? 'Yes' : 'No' }}</td>#}
+                        {# and so on ... #}
+                    {#</tr>#}
+                {#{% endfor %}#}
+            {#</table>#}
+
+
+                        </div>
+            </div></div>
+
+    <!--Script for displaying current time-->
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+    </script>
+
+{% endblock %}
+

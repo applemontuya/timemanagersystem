@@ -1,0 +1,12 @@
+#tmtg_manager_homepage:
+#    path:     /
+#    defaults: { _controller: TMTGManagerBundle:Default:index }
+
+
+tmtg_manager_login:
+    path:     /login
+    defaults: { _controller: TMTGManagerBundle:Default:login }
+
+tmtg_manager_loginCheck:
+    path:     /login_check
+    defaults: { _controller: TMTGManagerBundle:Default:loginCheck }

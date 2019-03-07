@@ -1,0 +1,17 @@
+tmtg_manager:
+    resource: "@TMTGManagerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+tmtg_database:
+    resource: "@TMTGDatabaseBundle/Resources/config/routing.yml"
+    prefix:   /
+
+tmtg_employee:
+    resource: "@TMTGEmployeeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+
+#app:
+#    resource: '@AppBundle/Controller/'
+#    type: annotation

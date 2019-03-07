@@ -1,0 +1,30 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    {{ include ('default/navbar.html.twig') }}
+    <div id="wrapper">
+
+        <form>
+            <fieldset>
+                <div class="container center_div">
+                    <div class="form-group" action="{{ 'login_check' }}">
+                        <label for="inputEmployeeID">Employee ID</label>
+                        <input type="text" class="form-control" id="inputEmployeeID"  placeholder="Enter Employee ID">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPIN">PIN</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+
+
+{% endblock %}
+
+

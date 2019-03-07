@@ -1,0 +1,7 @@
+tmtg_employee_homepage:
+    path:     /
+    defaults: { _controller: TMTGEmployeeBundle:Default:index }
+
+tmtg_employee_clockin:
+    path:     /log_check
+    defaults: { _controller: TMTGEmployeeBundle:Default:logCheck }

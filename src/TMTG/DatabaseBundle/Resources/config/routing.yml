@@ -1,0 +1,3 @@
+tmtg_database_homepage:
+    path:     /
+    defaults: { _controller: TMTGDatabaseBundle:Default:index }
