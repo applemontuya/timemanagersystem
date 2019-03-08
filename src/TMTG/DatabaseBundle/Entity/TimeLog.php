@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Entity;
+namespace TMTG\DatabaseBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * TimeLog
  *
  * @ORM\Table(name="time_log")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="TMTG\DatabaseBundle\Entity\TimeLogRepository")
  */
 class TimeLog
 {

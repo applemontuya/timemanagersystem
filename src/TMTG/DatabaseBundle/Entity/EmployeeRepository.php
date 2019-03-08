@@ -13,13 +13,11 @@ use Doctrine\ORM\EntityRepository;
 /**
  * EmployeeRepository
  */
-
 class EmployeeRepository extends EntityRepository
 {
 
     /**
      * Return PIN of an Employee
-     *
      *
      *
      */
@@ -32,4 +30,6 @@ class EmployeeRepository extends EntityRepository
 
         return $qb->getQuery()->getResult();
     }
+
+
 }
