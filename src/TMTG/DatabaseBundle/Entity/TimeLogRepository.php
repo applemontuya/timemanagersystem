@@ -29,6 +29,7 @@ class TimeLogRepository extends EntityRepository
 
     /**
      * @param type $empId
+     *
      */
     public function getEmployeeLog($empId){
         $qb = $this->_em->createQueryBuilder();
@@ -36,6 +37,22 @@ class TimeLogRepository extends EntityRepository
             ->from ('TMTGDatabaseBundle:TimeLog', 'tl')
             ->where('tl.idEmployee = :empId')
             ->setParameter('empId', $empId);
+
+        var_dump($qb->getQuery()->getResult());
+        return $qb->getQuery()->getResult();
+    }
+
+    /**
+     * @param type $empId
+     * @param date $date
+     */
+    public function getEmployeeLogStatus($empId, $date){
+        $qb = $this->_em->createQueryBuilder();
+        $qb->select ('tl.status')
+            ->from ('TMTGDatabaseBundle:TimeLog', 'tl')
+            ->where('tl.idEmployee = :empId' and 'tl.date = :date')
+            ->setParameter('empId', $empId)
+            ->setParameter('date', $date);
 
         var_dump($qb->getQuery()->getResult());
         return $qb->getQuery()->getResult();

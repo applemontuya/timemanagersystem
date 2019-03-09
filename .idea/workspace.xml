@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f27ef2-cf5b-47bf-8a61-56f3da50406e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/EmployeeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/EmployeeRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/Employee.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/Employee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/Paycode.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/Paycode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLogRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLogRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TMTG/EmployeeBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TMTG/EmployeeBundle/Controller/DefaultController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,14 +42,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TMTG/EmployeeBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="378">
+              <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
               <folding>
                 <element signature="e#50#107#0#PHP" expanded="true" />
+                <element signature="e#951#980#1#PHP" expanded="true" />
+                <element signature="e#1278#1306#1#PHP" expanded="true" />
                 <element signature="e#1240#1268#1#PHP" expanded="true" />
+                <element signature="e#1282#1326#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLogRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="439">
+              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -67,11 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TMTG/DatabaseBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="30" />
-              <folding>
-                <element signature="e#223#249#1#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="307">
+              <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -149,10 +149,10 @@
         <option value="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/Employee.php" />
         <option value="$PROJECT_DIR$/src/TMTG/ManagerBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/EmployeeRepository.php" />
-        <option value="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLog.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLogRepository.php" />
         <option value="$PROJECT_DIR$/src/TMTG/EmployeeBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLogRepository.php" />
+        <option value="$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLog.php" />
       </list>
     </option>
   </component>
@@ -369,12 +369,12 @@
       <workItem from="1551983536836" duration="28903000" />
       <workItem from="1552069731298" duration="7348000" />
       <workItem from="1552077164822" duration="62000" />
-      <workItem from="1552081879742" duration="1417000" />
+      <workItem from="1552081879742" duration="6160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77177000" />
+    <option name="totallyTimeSpent" value="81920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
@@ -645,23 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TMTG/DatabaseBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="30" />
-          <folding>
-            <element signature="e#223#249#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/EmployeeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -679,21 +662,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLogRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/TMTG/EmployeeBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="378">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+          <folding>
+            <element signature="e#50#107#0#PHP" expanded="true" />
+            <element signature="e#951#980#1#PHP" expanded="true" />
+            <element signature="e#1278#1306#1#PHP" expanded="true" />
+            <element signature="e#1240#1268#1#PHP" expanded="true" />
+            <element signature="e#1282#1326#1#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TMTG/EmployeeBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/src/TMTG/DatabaseBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#50#107#0#PHP" expanded="true" />
-            <element signature="e#1240#1268#1#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLogRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TMTG/DatabaseBundle/Entity/TimeLog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
         </state>
       </provider>
     </entry>

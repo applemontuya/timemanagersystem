@@ -7,8 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * TimeLog
  *
- * @ORM\Table(name="time_log")
- * @ORM\Entity(repositoryClass="TMTG\DatabaseBundle\Entity\TimeLogRepository")
+ * @ORM\Table(name="time_log", uniqueConstraints={@ORM\UniqueConstraint(name="status", columns={"id_log"})})
+ * @ORM\Entity
  */
 class TimeLog
 {
@@ -24,28 +24,35 @@ class TimeLog
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="time_in_am", type="datetime", nullable=false)
+     * @ORM\Column(name="date", type="date", nullable=true)
+     */
+    private $date;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="time_in_am", type="time", nullable=false)
      */
     private $timeInAm;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="time_out_am", type="datetime", nullable=false)
+     * @ORM\Column(name="time_out_am", type="time", nullable=false)
      */
     private $timeOutAm;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="time_in_pm", type="datetime", nullable=false)
+     * @ORM\Column(name="time_in_pm", type="time", nullable=false)
      */
     private $timeInPm;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="time_out_pm", type="datetime", nullable=false)
+     * @ORM\Column(name="time_out_pm", type="time", nullable=false)
      */
     private $timeOutPm;
 
@@ -57,12 +64,11 @@ class TimeLog
     private $idEmployee;
 
     /**
-     * @return int
+     * @var integer
+     *
+     * @ORM\Column(name="status", type="integer", nullable=false)
      */
-    public function getIdLog()
-    {
-        return $this->idLog;
-    }
+    private $status;
 
     /**
      * @param int $idLog
@@ -73,11 +79,11 @@ class TimeLog
     }
 
     /**
-     * @return \DateTime
+     * @param \DateTime $date
      */
-    public function getTimeInAm()
+    public function setDate($date)
     {
-        return $this->timeInAm;
+        $this->date = $date;
     }
 
     /**
@@ -89,27 +95,11 @@ class TimeLog
     }
 
     /**
-     * @return \DateTime
-     */
-    public function getTimeOutAm()
-    {
-        return $this->timeOutAm;
-    }
-
-    /**
      * @param \DateTime $timeOutAm
      */
     public function setTimeOutAm($timeOutAm)
     {
         $this->timeOutAm = $timeOutAm;
-    }
-
-    /**
-     * @return \DateTime
-     */
-    public function getTimeInPm()
-    {
-        return $this->timeInPm;
     }
 
     /**
@@ -121,14 +111,6 @@ class TimeLog
     }
 
     /**
-     * @return \DateTime
-     */
-    public function getTimeOutPm()
-    {
-        return $this->timeOutPm;
-    }
-
-    /**
      * @param \DateTime $timeOutPm
      */
     public function setTimeOutPm($timeOutPm)
@@ -137,19 +119,19 @@ class TimeLog
     }
 
     /**
-     * @return int
-     */
-    public function getIdEmployee()
-    {
-        return $this->idEmployee;
-    }
-
-    /**
      * @param int $idEmployee
      */
     public function setIdEmployee($idEmployee)
     {
         $this->idEmployee = $idEmployee;
+    }
+
+    /**
+     * @param int $status
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
     }
 
 
